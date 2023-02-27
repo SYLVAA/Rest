@@ -1,0 +1,176 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+
+/* Navbar */
+.navbar-brand{
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+.nav-item{
+    padding: 0 18px;
+    margin: 10px;
+    
+}
+.navbar-toggler{
+    border: 0;
+    
+}
+
+
+.k{
+    margin-right: 60px;
+    color: white;
+    font-size: 17px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   text-decoration: none;
+   padding: 10px 12px;
+   transition: 0.3s;
+   border-radius: 6px;
+   border: solid white;
+}
+.k:hover{
+    background-color: white;
+ color: black;
+
+}
+ /* Media Query */
+ @media (max-width:768px){
+
+.k{
+    margin: 15px;
+
+}
+ }
+
+
+ /* HOME PAGE */
+ .ok{
+    color: red;
+ }
+
+ 
+.home .carousel-item {
+    min-height: 90vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+     font-family: 'Kaushan Script', cursive;
+}
+
+.home .carousel-item:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+
+}
+
+.A{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home .carousel-item.active h1{
+    animation: fadeInLeft 0.5s ease forwards;
+
+}
+.home .carousel-item.active p{
+    animation: fadeInRight 0.5s ease forwards;
+
+}
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/*ABOUT */
+.l{
+        font-family: 'Kaushan Script', cursive;
+}
+
+/* RECIPES */
+.JJ{
+    position: relative;
+    padding: 180px 0;
+    margin: 100px;
+    font-family: 'Kaushan Script', cursive;
+     background: url(sec-bg1.jpg);
+    background-size: cover; 
+     background-attachment: fixed; 
+     background-position: center;
+}
+
+.sec-head h2{
+    font-size: 65px;
+}
+
+
+/* MENU */
+.intro-text{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.intro-text p{
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+#menu .nav-pills .nav-link{
+background-color: fff;
+margin-left: 8px;
+margin-right: 7px;
+color: black;
+border-radius: 100px;
+box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+#menu .nav-pills .nav-link.active{
+    background-color: #f58d17;
+    color: #ffffff;
+
+}
+
+/* TEAMS */
+.HH{
+    position: relative;
+    padding: 180px 0;
+    margin: 100px;
+    font-family: 'Kaushan Script', cursive;
+     background: url(chef.jpg);
+    background-size: cover; 
+     background-attachment: fixed; 
+     background-position: center;
+}
+
